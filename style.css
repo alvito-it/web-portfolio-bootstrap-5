@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+.nav-link {
+    margin-right: 1.5em;
+}
+
+.hero {
+    padding-top: 7rem;
+    background-color: #e2edff;
+}
+
+.hero img, .hero h1, .hero p {
+    opacity: 0;
+    transform: translate(0, -50px);
+    transition: 1s;
+}
+
+.hero img.hero-show, .hero h1.hero-show, .hero p.hero-show {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.hero img {
+    width: 200px;
+}
+
+.about .p-left, .about .p-right {
+    opacity: 0;
+    transform: translate(-50px, 0);
+    transition: 1s;
+}
+
+.about .p-right {
+    transform: translate(50px, 0);
+}
+
+.about p.about-show {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.projects {
+    background-color: #e2edff;
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.card a:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+}
+
+section {
+    padding-top: 7rem;
+}
